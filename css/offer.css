@@ -1,0 +1,25 @@
+.content {
+  align-items: flex-start;
+}
+
+.offer h1 {
+  margin-bottom: 50px;
+}
+
+.offer h3 {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.offer h5 {
+  margin: 0;
+  color: #447604;
+}
+
+.category-title {
+  font-size: 24px;
+}
+
+.offer .christmas-trees {
+  margin-right: 100px;
+}

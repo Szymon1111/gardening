@@ -1,0 +1,42 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  font-family: Sora;
+
+  background-color: #ececec;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 500;
+
+  margin: 5px 0;
+}
+
+.text {
+  font-size: 18px;
+  text-align: center;
+  margin: 6px;
+}
+
+.section {
+  max-width: 1400px;
+  margin: auto;
+}
