@@ -1,0 +1,26 @@
+.info {
+  width: 100%;
+  padding: 120px;
+
+  box-sizing: border-box;
+}
+
+.info .content {
+  justify-content: space-between;
+  width: 60vw;
+}
+
+.info h2 {
+  font-weight: 500;
+  margin: 15px 0;
+
+}
+
+.info h3 {
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.info .single-location {
+  margin: 10px;
+}

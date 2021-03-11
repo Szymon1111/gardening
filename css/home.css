@@ -3,19 +3,23 @@
   height: 100vh;
 
   box-sizing: border-box;
+  justify-content: space-between;
+
+  /* color: white; */
 }
 
 .page-header {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -35%);
+  padding: 0 10vw;
+  align-items: flex-end;
 
-  /* align-items: flex-start; */
+  width: 60%;
+
+  box-sizing: border-box;
 }
 
 .page-header h1 {
-  font-size: 56px;
+  font-size: 54px;
+  text-align: right;
 }
 
 .page-header h3 {
@@ -29,31 +33,59 @@
 .page-header .text {
   font-size: 16px;
 
-  /* text-align: left; */
-}
-
-.bg-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-
-  z-index: -1000;
-
-  display: none;
+  text-align: right;
 }
 
 .home .bg-image {
   background-image: url('../images/img1.jpg');
-  background-size: cover;
-  background-position: 0 30%;
+  /* 
+  left: 0; */
 
-  width: 100%;
+  width: 40%;
   height: 100%;
+}
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1000;
+.home .next-section {
+  position: absolute;
+  bottom: 15vh;
+  right: 10vw;
+
+  transition: .5s;
+}
+
+.home .next-section:hover {
+  cursor: pointer;
+  color: #447604;
+}
+
+.home .scroll-down-arrow {
+  width: 35px;
+
+  position: absolute;
+  top: 200%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  animation: bounce 2s infinite;
+
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+
+  40% {
+    transform: translate(-50%, -10px);
+  }
+
+  60% {
+    transform: translate(-50%, -5px);
+  }
 }

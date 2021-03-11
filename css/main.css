@@ -37,6 +37,11 @@ h1 {
 }
 
 .section {
-  max-width: 1400px;
-  margin: auto;
+  box-sizing: border-box;
+  background-color: #ececec;
+}
+
+.bg-image {
+  background-size: cover;
+  background-position: 0 30%;
 }

@@ -1,3 +1,28 @@
 .sale {
-  margin-top: 20vh;
+  width: 100%;
+  height: 70vh;
+
+  justify-content: space-between;
+}
+
+.sale h1 {
+  margin-bottom: 40px;
+}
+
+.sale .content {
+  width: 60%;
+  padding: 0 10vw;
+
+  box-sizing: border-box;
+}
+
+.sale .text {
+  margin: 20px 0;
+}
+
+.sale .bg-image {
+  background-image: url('../images/img3.jpg');
+
+  width: 40%;
+  height: 100%;
 }
