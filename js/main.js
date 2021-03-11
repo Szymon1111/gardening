@@ -7,7 +7,5 @@ navOpener.addEventListener("click", () => {
 });
 
 window.addEventListener("load", () => {
-  window.setTimeout(() => {
-    document.querySelector(".loading").style.opacity = "0";
-  }, 1000);
+  document.querySelector(".loading").style.opacity = "0";
 });
