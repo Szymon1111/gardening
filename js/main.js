@@ -7,5 +7,11 @@ navOpener.addEventListener("click", () => {
 });
 
 window.addEventListener("load", () => {
-  document.querySelector(".loading").style.opacity = "0";
+  const loading = document.querySelector(".loading");
+
+  loading.style.opacity = "0";
+
+  window.setInterval(() => {
+    loading.style.display = "none";
+  }, 1000);
 });
