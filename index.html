@@ -20,6 +20,25 @@
 
 <body>
 
+  <style>
+    .loading {
+      width: 100%;
+      height: 100vh;
+
+      background-color: #ececec;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      z-index: 5500;
+    }
+  </style>
+
+  <div class="loading flex-column">
+    <h1>Ładowanie</h1>
+  </div>
+
   <div class="nav-opener"></div>
 
   <nav class="page-nav flex-column">
@@ -73,7 +92,7 @@
 
   </section> -->
 
-  <section class="section offer flex-row">
+  <section class="section offer flex-row" id="offer">
 
     <div class="content flex-column">
       <h1>Nasza oferta</h1>
