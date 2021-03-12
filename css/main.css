@@ -68,6 +68,43 @@ h1 {
 }
 
 .loading h1 {
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 300;
+}
+
+.dot {
+
+  width: 5px;
+  height: 5px;
+
+  margin: 3px;
+
+  border-radius: 50%;
+
+  background-color: #000;
+
+  animation: loading-animation 1s infinite;
+}
+
+#second {
+  animation-delay: .25s;
+}
+
+#third {
+  animation-delay: .5s;
+}
+
+@keyframes loading-animation {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.3);
+  }
+
+  50%,
+  100% {
+    transform: scale(1);
+  }
 }
