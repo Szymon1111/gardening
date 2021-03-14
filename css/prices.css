@@ -1,0 +1,25 @@
+.prices {
+  width: 100%;
+  height: 80vh;
+
+  justify-content: space-between;
+}
+
+.prices .content {
+  padding: 5vh 10vw;
+  box-sizing: border-box;
+
+  width: 50%;
+}
+
+.prices .bg-image {
+  background-image: url('../images/img4.jpg');
+
+  width: 50%;
+  height: 100%;
+}
+
+.price {
+  font-size: 20px;
+  margin: 7px 20px;
+}

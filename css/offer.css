@@ -1,6 +1,6 @@
 .offer {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
 
   justify-content: space-between;
 }
@@ -13,12 +13,14 @@
 .offer h1 {
   margin-bottom: 50px;
   text-align: center;
+  font-size: 54px;
+
 }
 
 .offer h3 {
   margin: 0;
   margin-top: 20px;
-  text-align: center;
+  text-align: left;
 
 }
 
@@ -35,11 +37,84 @@
 
 .offer .christmas-trees {
   margin-right: 100px;
+  align-items: flex-start;
+}
+
+.offer .decorative-trees {
+  align-items: flex-end;
+}
+
+.offer-option {
+  position: relative;
+
+  width: 50%;
+  height: 100%;
+
+
+  transition: .5s;
+}
+
+.offer-option:hover {
+  width: 75%;
+}
+
+.offer-option h1 {
+  color: #ececec;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 101;
+
+  transition: .5s;
+}
+
+.offer-option .content {
+  width: 100%;
+  height: 0;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  padding: 0;
+
+  z-index: 100;
+
+  background-color: #ececec;
+
+  overflow: hidden;
+
+  transition: .5s;
+}
+
+.offer-option:hover>.content {
+  height: 100%;
+}
+
+.offer-option:hover>h1 {
+  top: 10%;
+  color: black;
+  font-size: 30px;
 }
 
 .offer .bg-image {
-  background-image: url('../images/img2.jpg');
-
-  width: 40%;
+  width: 100%;
   height: 100%;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.offer .right-image {
+  right: 0;
+  background-image: url('../images/img2.jpg');
+}
+
+.offer .left-image {
+  left: 0;
+  background-image: url('../images/img5.jpg');
 }

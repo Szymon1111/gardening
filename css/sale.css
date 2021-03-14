@@ -5,19 +5,18 @@
   justify-content: space-between;
 }
 
-.sale h1 {
-  margin-bottom: 40px;
-}
-
 .sale .content {
   width: 60%;
   padding: 0 10vw;
 
   box-sizing: border-box;
+
+  align-items: flex-start;
 }
 
 .sale .text {
   margin: 20px 0;
+  text-align: left;
 }
 
 .sale .bg-image {

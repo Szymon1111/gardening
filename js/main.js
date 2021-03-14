@@ -11,5 +11,6 @@ window.addEventListener("load", () => {
   loading.style.opacity = "0";
   window.setInterval(() => {
     loading.style.display = "none";
+    document.querySelector("body").style.overflow = "auto";
   }, 1000);
 });

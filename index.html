@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/offer.css">
   <link rel="stylesheet" href="./css/sale.css">
   <link rel="stylesheet" href="./css/info.css">
-
+  <link rel="stylesheet" href="./css/prices.css">
 
   <title>Gospodarstwo ogrodnicze Bogusław Miłek</title>
 </head>
@@ -25,14 +25,16 @@
         opacity: 0;
         display: none;
       }
+
+      body {
+        overflow: auto;
+      }
     </style>
   </noscript>
 
 
 
   <div class="loading flex-column">
-    <h1>Ładowanie</h1>
-
     <div class="loading-dots flex-row">
       <div class="dot" id="first"></div>
       <div class="dot" id="second"></div>
@@ -95,7 +97,9 @@
 
   <section class="section offer flex-row" id="offer">
 
-    <div class="content flex-column">
+
+
+    <!-- <div class="content flex-column">
       <h1>Nasza oferta</h1>
 
       <div class="flex-row" style="align-items: flex-start;">
@@ -128,16 +132,50 @@
 
         </div>
       </div>
+    </div> -->
+
+    <div class="offer-option">
+
+      <div class="content flex-column">
+        <img src="./images/choinka.png" alt="" class="tree" width="100px">
+
+        <h3>Jodła kaukaska 0.8 - 2.5m</h3>
+        <h5>Abies nordmanniana</h5>
+
+        <h3>Świerk srebrny 0.8 - 2.5m</h3>
+        <h5>Picea pungens</h5>
+      </div>
+
+      <h1>Drzewka bożonarodzeniowe</h1>
+      <div class="bg-image left-image "></div>
+
     </div>
 
-    <div class="bg-image"></div>
+    <div class="offer-option">
+
+      <div class="content flex-column">
+        <img src="./images/tuja.png" alt="" class="tree" width="79px">
+
+        <h3>Tuja szmaragd 0.8 - 1.5m</h3>
+        <h5>Thuja occidentalis szmaragd</h5>
+
+        <h3>Tuja brabant 0.8 - 1.5m</h3>
+        <h5>Thuja occidentalis brabant</h5>
+
+        <h3>Świerk srebrny 0.8 - 2.5m</h3>
+        <h5>Picea pungens</h5>
+
+      </div>
+
+      <h1>Drzewka i krzewy ozdobne</h1>
+      <div class="bg-image right-image "></div>
+
+    </div>
 
 
   </section>
 
   <section class="section sale flex-row">
-
-    <div class="bg-image"></div>
 
     <div class="content flex-column">
       <h1>Sprzedaż</h1>
@@ -158,6 +196,25 @@
       <p class="text">
         W obu przypadkach oferujemy możliwość transportu pod wskazany adres
       </p>
+    </div>
+
+    <div class="bg-image"></div>
+
+  </section>
+
+  <section class="section prices flex-row">
+
+    <div class="bg-image"></div>
+
+    <div class="content flex-column">
+
+      <h1>Cennik</h1>
+
+      <p class="price">Świerk srebrny: 80 - 200zł</p>
+      <p class="price">Świerk srebrny: 80 - 200zł</p>
+      <p class="price">Świerk srebrny: 80 - 200zł</p>
+      <p class="price">Świerk srebrny: 80 - 200zł</p>
+
     </div>
   </section>
 
