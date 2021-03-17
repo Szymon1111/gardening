@@ -13,7 +13,7 @@
 .offer h1 {
   margin-bottom: 50px;
   text-align: center;
-  font-size: 54px;
+  font-size: 50px;
 
 }
 
@@ -119,4 +119,11 @@
 .offer .left-image {
   left: 0;
   background-image: url('../images/img5.jpg');
+}
+
+
+@media (max-width: 1320px){
+  .offer h1{
+    font-size: 42px;
+  }
 }
