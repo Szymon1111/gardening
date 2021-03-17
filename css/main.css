@@ -34,6 +34,11 @@ h1 {
   margin: 5px 0;
 }
 
+a {
+  text-decoration: none;
+  color: #555C46;
+}
+
 .text {
   font-size: 18px;
   text-align: center;

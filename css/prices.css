@@ -1,8 +1,6 @@
 .prices {
   width: 100%;
   height: 80vh;
-
-  justify-content: space-between;
 }
 
 .prices .content {
@@ -10,6 +8,8 @@
   box-sizing: border-box;
 
   width: 50%;
+
+  align-items: flex-end;
 }
 
 .prices .bg-image {
@@ -20,6 +20,6 @@
 }
 
 .price {
-  font-size: 20px;
-  margin: 7px 20px;
+  font-size: 22px;
+  margin: 7px 0;
 }

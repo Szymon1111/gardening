@@ -1,8 +1,13 @@
 .info {
   width: 100%;
+  min-height: 100vh;
   padding: 120px;
 
   box-sizing: border-box;
+
+  background-color: #B0B6A4;
+
+  position: relative;
 }
 
 .info .content {
@@ -12,7 +17,7 @@
 
 .info h2 {
   font-weight: 500;
-  margin: 15px 0;
+  margin: 5px 0;
 
 }
 
@@ -23,4 +28,17 @@
 
 .info .single-location {
   margin: 10px;
+}
+
+.info .contact img {
+  margin-right: 8px;
+}
+
+.info .locations {
+  margin-top: 100px;
+}
+
+.info .icons-author {
+  position: absolute;
+  bottom: 0;
 }

@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/fonts.css">
@@ -14,6 +15,7 @@
   <link rel="stylesheet" href="./css/sale.css">
   <link rel="stylesheet" href="./css/info.css">
   <link rel="stylesheet" href="./css/prices.css">
+  <link rel="stylesheet" href="./css/tips.css">
 
   <title>Gospodarstwo ogrodnicze Bogusław Miłek</title>
 </head>
@@ -49,8 +51,8 @@
     <div class="nav-element" onclick='scrollToElement(".offer")'>Oferta</div>
     <div class="nav-element" onclick='scrollToElement(".sale")'>Sprzedaż</div>
     <div class="nav-element" onclick='scrollToElement(".prices")'>Cennik</div>
-    <div class="nav-element">Przydatne&nbspporady</div>
-    <div class="nav-element">Informacje</div>
+    <div class="nav-element" onclick='scrollToElement(".tips")'>Przydatne&nbspporady</div>
+    <div class="nav-element" onclick='scrollToElement(".info")'>Kontakt</div>
   </nav>
 
   <section class="section home flex-row">
@@ -68,7 +70,7 @@
         Naszym priorytetem jest produkcja roślin najwyżeszj jakośći !
       </p>
 
-      <div class="next-section">
+      <div class="next-section" onclick='scrollToElement(".offer")'>
         Sprawdź co możemy Ci zaoferować
         <img class="scroll-down-arrow" src="./images/down-arrow.png">
       </div>
@@ -219,19 +221,36 @@
     </div>
   </section>
 
-  <section class="section info flex-row">
+  <section class="section tips flex-row">
+    <div class="content">
+      <h1>Przydatne porady</h1>
+      <!-- <ul class="tips-list">
+        <li class="tip">Porada nr 1</li>
+        <li class="tip">Porada nr 2</li>
+        <li class="tip">Porada nr 3</li>
+        <li class="tip">Porada nr 4</li>
+      </ul> -->
 
-    <div class="contact">
+      <p class="tip">Porada nr 1</p>
+      <p class="tip">Porada nr 2</p>
+      <p class="tip">Porada nr 3</p>
+      <p class="tip">Porada nr 4</p>
+
+    </div>
+    <div class="bg-image"></div>
+  </section>
+
+  <section class="section info flex-column">
+
+    <div class="contact flex-column">
       <h1>Kontakt</h1>
 
-      <h2>Bogdan Miłek</h2>
-      <h3>502 144 747</h3>
-      <h3>bogdanmilek@interia.pl</h3>
+      <h2 class="flex-row"><img src="./images/phone-call.png" alt=""> 502 144 747</h2>
+      <h2 class="flex-row"><img src="./images/email.png" alt=""> bogdanmilek@interia.pl</h2>
     </div>
 
     <div class="locations flex-column">
       <h1>Lokalizacje</h1>
-
       <div class="flex-row">
         <div class="single-location flex-column">
           <h2>Gnatowice</h2>
@@ -248,6 +267,10 @@
         </div>
       </div>
     </div>
+
+    <div class="icons-author">Icons made by <a href="https://www.freepik.com" title="Freepik"
+        target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"
+        target="_blank">www.flaticon.com</a></div>
   </section>
 
   <script src="./js/main.js"></script>
