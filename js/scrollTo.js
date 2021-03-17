@@ -1,7 +1,14 @@
-const scrollToElement = (tag) => {
+const scrollToElement = (tag, elementPart = "CENTER") => {
   const element = document.querySelector(tag);
-  const scrollPos =
-    element.offsetTop - window.innerHeight / 2 + element.clientHeight / 2;
+  let scrollPos = 0;
+
+  if (elementPart = "CENTER") {
+    scrollPos =
+      element.offsetTop - window.innerHeight / 2 + element.clientHeight / 2;
+  } 
+  else if (elementPart = "TOP") {
+    scrollPos = element.offsetTop;
+  }
 
   window.scroll({
     top: scrollPos,

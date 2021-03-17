@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./css/info.css">
   <link rel="stylesheet" href="./css/prices.css">
   <link rel="stylesheet" href="./css/tips.css">
+  <link rel="stylesheet" href="./css/gallery.css">
 
   <title>Gospodarstwo ogrodnicze Bogusław Miłek</title>
 </head>
@@ -52,6 +53,7 @@
     <div class="nav-element" onclick='scrollToElement(".sale")'>Sprzedaż</div>
     <div class="nav-element" onclick='scrollToElement(".prices")'>Cennik</div>
     <div class="nav-element" onclick='scrollToElement(".tips")'>Przydatne&nbspporady</div>
+    <div class="nav-element" onclick='scrollToElement(".gallery", "TOP")'>Galeria</div>
     <div class="nav-element" onclick='scrollToElement(".info")'>Kontakt</div>
   </nav>
 
@@ -146,7 +148,7 @@
         <h5>Abies nordmanniana</h5>
 
         <h3>Świerk srebrny 0.8 - 2.5m</h3>
-        <h5>Picea pungens</h5>
+        <h5>Picea pungens glauca</h5>
       </div>
 
       <h1>Drzewka bożonarodzeniowe</h1>
@@ -160,13 +162,13 @@
         <img src="./images/tuja.png" alt="" class="tree" width="79px">
 
         <h3>Tuja szmaragd 0.8 - 1.5m</h3>
-        <h5>Thuja occidentalis szmaragd</h5>
+        <h5>thuja occidentalis smaragd</h5>
 
         <h3>Tuja brabant 0.8 - 1.5m</h3>
         <h5>Thuja occidentalis brabant</h5>
 
         <h3>Świerk srebrny 0.8 - 2.5m</h3>
-        <h5>Picea pungens</h5>
+        <h5>Picea pungens glauca</h5>
 
       </div>
 
@@ -193,7 +195,7 @@
 
       <p class="text">
         Drzewa i krzewy ozdobne oferujemy w okresie od wiosny do jesieni.
-        Bryły korzeniowe roślin standardowo zabezpieczamy torbą jutową oraz opcjonalnie plastikowym pojemnikiem.
+        Bryły korzeniowe roślin standardowo zabezpieczamy pieluchą jutową oraz opcjonalnie plastikowym pojemnikiem.
       </p>
 
       <p class="text">
@@ -240,6 +242,23 @@
     <div class="bg-image"></div>
   </section>
 
+  <section class="section gallery flex-column">
+    <h1>Galeria</h1>
+    <div class="image-slider">
+      <!-- <div class="previous-image"></div>
+      <img src="./images/img1.jpg" alt="">
+      <div class="next-image"></div> -->
+
+      <img src="./images/img1.jpg" alt="">
+      <img src="./images/img2.jpg" alt="">
+      <img src="./images/img3.jpg" alt="">
+      <img src="./images/img4.jpg" alt="">
+      <img src="./images/img5.jpg" alt="">
+      <img src="./images/img6.jpg" alt="">
+
+    </div>
+  </section>
+
   <section class="section info flex-column">
 
     <div class="contact flex-column">
@@ -255,10 +274,9 @@
         <div class="single-location flex-column">
           <h2>Gnatowice</h2>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.027303954016!2d20.175454032706742!3d50.19632287309889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDExJzQ2LjgiTiAyMMKwMTAnMzguMyJF!5e1!3m2!1spl!2spl!4v1615494241380!5m2!1spl!2spl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1731.0110473386096!2d20.184779976125803!3d50.196394711873324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDExJzQ3LjAiTiAyMMKwMTEnMDkuMiJF!5e1!3m2!1spl!2spl!4v1615979206912!5m2!1spl!2spl"
             width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-
         <div class="single-location flex-column">
           <h2>Borzęta</h2>
           <iframe
@@ -275,6 +293,7 @@
 
   <script src="./js/main.js"></script>
   <script src="./js/scrollTo.js"></script>
+  <script src="./js/gallery.js"></script>
 
 </body>
 
