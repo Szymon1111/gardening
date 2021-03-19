@@ -92,16 +92,20 @@
   transition: .5s;
 }
 
-.offer-option:hover>.content {
-  height: 100%;
+
+@media (min-width: 1025px){
+  .offer-option:hover>.content {
+    height: 100%;
+  }
+  
+  .offer-option:hover>h1 {
+    top: 10%;
+  
+    color: black;
+    font-size: 30px;
+  }
 }
 
-.offer-option:hover>h1 {
-  top: 10%;
-
-  color: black;
-  font-size: 30px;
-}
 
 .offer .bg-image {
   width: 100%;
@@ -123,7 +127,45 @@
 
 
 @media (max-width: 1320px){
+  .offer{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: auto;
+  }
+
+  .offer-option{
+    width: 100%;
+
+    margin-top: 100px;
+  }
+
   .offer h1{
     font-size: 42px;
+  }
+
+  .offer .right-image,
+  .offer .left-image,
+  .offer .bg-image{
+    display: none;
+  }
+
+  .offer-option .content{
+    position: static;
+    height: auto;
+
+    padding: 0 10vw;
+
+    background-color: transparent;
+  }
+
+  .offer-option h1{
+    position: static;
+
+    color: black;
+    font-size: 36px;
+
+    transform: none;
   }
 }
