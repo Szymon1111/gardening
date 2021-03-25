@@ -46,7 +46,29 @@
   background-color: #ececec;
 }
 
+.nav-opener-background{
+  position: absolute;
+  top: 50;
+  left: 50;
 
+  transform: translate(-16%, -26%);
+
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+
+  background-color: #ececec;
+  opacity: .5;
+
+  z-index: -2;
+
+  transition: .5s;
+}
+
+.nav-opener.opened .nav-opener-background{
+  opacity: 0;
+}
 
 .page-nav {
   position: fixed;

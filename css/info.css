@@ -42,3 +42,19 @@
   position: absolute;
   bottom: 0;
 }
+
+.info .map{
+  width: 450px;
+  height: 300px;
+}
+
+@media (max-width: 1024px){
+  .info .maps {
+    flex-direction: column;
+  }
+
+  .info .map{
+    width: 80vw;
+    height: 300px;
+  }
+}

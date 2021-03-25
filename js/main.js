@@ -14,3 +14,9 @@ window.addEventListener("load", () => {
     document.querySelector("body").style.overflow = "auto";
   }, 1000);
 });
+
+const home = document.querySelector('.home');
+home.addEventListener('click', (event) => {
+  if(window.innerWidth > 1024 && event.clientX < window.innerWidth / 2)
+    home.classList.toggle('opened');
+})

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, minimum-scale=1">
+  <meta name="viewport" content="width=device-width, maximum-scale=5.0, minimum-scale=1">
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/fonts.css">
@@ -45,7 +45,9 @@
     </div>
   </div>
 
-  <div class="nav-opener"></div>
+  <div class="nav-opener">
+    <div class="nav-opener-background"></div>
+  </div>
 
   <nav class="page-nav flex-column">
     <div class="nav-element" onclick='scrollToElement(".home")'>O firmie</div>
@@ -59,6 +61,10 @@
 
   <section class="section home flex-row">
     <div class="bg-image"></div>
+
+    <img src="./images/tap.png" alt="KLIKNIJ" class="tap-icon">
+
+    <video src="./strona.mp4" autoplay muted loop class="bg-video"></video>
 
     <div class="page-header flex-column">
       <h1>Gospodarstwo ogrodnicze</h1>
@@ -77,6 +83,8 @@
         <img class="scroll-down-arrow" src="./images/down-arrow.png">
       </div>
     </div>
+
+
   </section>
 
 
@@ -102,11 +110,15 @@
 
   <section class="section offer flex-row" id="offer">
 
+    <h1 class="section-title">Oferta</h1>
+    
     <div class="offer-option">
-      <h1>Drzewka bożonarodzeniowe</h1>
+      <h1 class="desktop-subtitle">Drzewka bożonarodzeniowe</h1>
 
       <div class="content flex-column">
         <img src="./images/choinka.png" alt="" class="tree" width="100px">
+
+        <h1 class="mobile-subtitle">Drzewka bożonarodzeniowe</h1>
 
         <h3>Jodła kaukaska 0.8 - 2.5m</h3>
         <h5>Abies nordmanniana</h5>
@@ -120,10 +132,11 @@
     </div>
 
     <div class="offer-option">
-      <h1>Drzewka&nbspi&nbspkrzewy ozdobne</h1>
+      <h1 class="desktop-subtitle">Drzewka&nbspi&nbspkrzewy ozdobne</h1>
 
       <div class="content flex-column">
         <img src="./images/tuja.png" alt="" class="tree" width="79px">
+        <h1 class="mobile-subtitle">Drzewka&nbspi&nbspkrzewy ozdobne</h1>
 
         <h3>Tuja szmaragd 0.8 - 1.5m</h3>
         <h5>thuja occidentalis smaragd</h5>
@@ -143,30 +156,36 @@
 
   </section>
 
-  <section class="section sale flex-row">
+  <section class="section sale flex-column">
+      
 
-    <div class="content flex-column">
-      <h1>Sprzedaż</h1>
+      <h1 class="section-title">Sprzedaż</h1>
+        
 
-      <p class="text">
-        Sprzedaż detaliczną drzewek bożonarodzeniowych prowadzimy bezpośrednio na plantacji w okresie
-        przedświątecznym.
-        Zamówienia hurtowe przyjmujemy od 1 sierpnia.
-        Choinki oferowane są jako cięte lub wykopane z bryłą korzeniową i zapakowane w pojemniki.
-        Wszystkie rośliny pakujemy w siatkę ochronną.
-      </p>
+      <div class="flex-row options">
+        <div class="left-text text flex-column">
+          <div class="arrow"></div>
 
-      <p class="text">
-        Drzewa i krzewy ozdobne oferujemy w okresie od wiosny do jesieni.
-        Bryły korzeniowe roślin standardowo zabezpieczamy pieluchą jutową oraz opcjonalnie plastikowym pojemnikiem.
-      </p>
+          Sprzedaż detaliczną drzewek bożonarodzeniowych prowadzimy bezpośrednio na plantacji w okresie
+          przedświątecznym.
+          Zamówienia hurtowe przyjmujemy od 1 sierpnia.<br>
+          Choinki oferowane są jako cięte lub wykopane z bryłą korzeniową i zapakowane w pojemniki.<br>
+          Wszystkie rośliny pakujemy w siatkę ochronną.
+        </div>
 
-      <p class="text">
+        <div class="right-text text flex-column">
+          <div class="arrow"></div>
+
+          Drzewa i krzewy ozdobne oferujemy w okresie od wiosny do jesieni.
+          Bryły korzeniowe roślin standardowo zabezpieczamy pieluchą jutową oraz opcjonalnie plastikowym pojemnikiem.
+        </div>
+      </div>
+      <div class="center-text text">
         W obu przypadkach oferujemy możliwość transportu pod wskazany adres
-      </p>
-    </div>
+      </div>
 
-    <div class="bg-image"></div>
+      <img src="./images/tree.png" alt="" class="background-image">
+    <!-- <div class="bg-image"></div> -->
 
   </section>
 
@@ -176,7 +195,7 @@
 
     <div class="content flex-column">
 
-      <h1>Cennik</h1>
+      <h1 class="section-title">Cennik</h1>
 
       <p class="price">Świerk srebrny: 80 - 200zł</p>
       <p class="price">Świerk srebrny: 80 - 200zł</p>
@@ -188,7 +207,7 @@
 
   <section class="section tips flex-row">
     <div class="content">
-      <h1>Przydatne porady</h1>
+      <h1 class="section-title">Przydatne porady</h1>
       <!-- <ul class="tips-list">
         <li class="tip">Porada nr 1</li>
         <li class="tip">Porada nr 2</li>
@@ -206,7 +225,7 @@
   </section>
 
   <section class="section gallery flex-column">
-    <h1>Galeria</h1>
+    <h1 class="section-title">Galeria</h1>
     <div class="image-slider">
       <!-- <div class="previous-image"></div>
       <img src="./images/img1.jpg" alt="">
@@ -225,33 +244,37 @@
   <section class="section info flex-column">
 
     <div class="contact flex-column">
-      <h1>Kontakt</h1>
+      <h1 class="section-title">Kontakt</h1>
 
       <h2 class="flex-row"><img src="./images/phone-call.png" alt=""> 502 144 747</h2>
       <h2 class="flex-row"><img src="./images/email.png" alt=""> bogdanmilek@interia.pl</h2>
     </div>
 
     <div class="locations flex-column">
-      <h1>Lokalizacje</h1>
-      <div class="flex-row">
+      <h1 class="section-title">Lokalizacje</h1>
+      <div class="flex-row maps">
         <div class="single-location flex-column">
           <h2>Gnatowice</h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1731.0110473386096!2d20.184779976125803!3d50.196394711873324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDExJzQ3LjAiTiAyMMKwMTEnMDkuMiJF!5e1!3m2!1spl!2spl!4v1615979206912!5m2!1spl!2spl"
-            width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
         </div>
         <div class="single-location flex-column">
           <h2>Borzęta</h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d871.4399299546475!2d20.009069488167242!3d49.86825386311165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDUyJzA1LjciTiAyMMKwMDAnMzQuNiJF!5e1!3m2!1spl!2spl!4v1615494013646!5m2!1spl!2spl"
-            width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
         </div>
       </div>
     </div>
 
-    <div class="icons-author">Icons made by <a href="https://www.freepik.com" title="Freepik"
+    <div class="icons-author">
+      Icons made by <a href="https://www.freepik.com" title="Freepik"
         target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"
-        target="_blank">www.flaticon.com</a></div>
+        target="_blank">www.flaticon.com</a>
+        <a href="https://www.freepik.com/vectors/tree">Tree vector created by dgim-studio - www.freepik.com</a>
+
+      </div>
   </section>
 
   <script src="./js/main.js"></script>

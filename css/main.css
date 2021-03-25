@@ -27,11 +27,12 @@ body {
   justify-content: center;
 }
 
-h1 {
-  font-size: 54px;
+.section-title {
+  font-size: 48px;
   font-weight: 700;
 
-  margin: 5px 0;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 a {
@@ -118,5 +119,14 @@ a {
 
   .section{
     justify-content: center;
+  }
+
+  .section-title{
+    font-size: 48px;
+
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    text-align: center;
   }
 }

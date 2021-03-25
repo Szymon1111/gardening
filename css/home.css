@@ -5,25 +5,44 @@
   box-sizing: border-box;
   justify-content: space-between;
 
+  transition: 1s;
+
+  overflow: hidden;
   /* color: white; */
 }
 
 .page-header {
+  position: relative;
+
   padding: 0 10vw;
   align-items: flex-end;
 
-  width: 60%;
+  width: 55%;
+  height: 100%;
 
   box-sizing: border-box;
+
+  background-color: #ececec;
+
+  transition:transform 1s;
+
+  z-index: 100;
+}
+
+.home.opened .page-header{
+  padding: 0;
+  transform: translateX(150%);
 }
 
 .page-header h1 {
   font-size: 48px;
   text-align: right;
+
+  margin-bottom: 5px;
 }
 
 .page-header h3 {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 500;
 
   margin: 0;
@@ -33,6 +52,8 @@
 .page-header .text {
   font-size: 16px;
 
+  margin: 7px 0;
+
   text-align: right;
 }
 
@@ -41,13 +62,41 @@
 
   width: 40%;
   height: 100%;
+
+  visibility: hidden;
+}
+
+.home .bg-video{
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  min-height: 100%;
+
+  transform: translateX(-40%);
+
+  transition: 1s;
+
+  z-index: 0;
+}
+
+.home .tap-icon{
+  position: absolute;
+
+  bottom: 5vh;
+  left: 5vh;
+
+  z-index: 500;
+}
+
+.home.opened .bg-video{
+  width: 100%;
+  transform: translateX(0%);
 }
 
 .home .next-section {
-  position: absolute;
-  bottom: 18vh;
-  right: 10vw;
-
+  position: relative;
+  margin-top: 50px;
   transition: .5s;
 }
 
@@ -90,31 +139,58 @@
 
 @media (max-width: 1024px){
   .home{
-    align-items: flex-start;
-
-    padding-top: 20vh;
+    align-items: center;
   }
 
   .home .page-header{
     align-items: center;
     width: 100%;
+    height: auto;
 
     padding: 0;
+
+    color: #ececec;
+
+    background-color: transparent;
   }
 
   .home .page-header h1{
     text-align: center;
+    font-size: 42px;
   }
 
   .home .text{
     text-align: center;
   }
 
-  .home .next-section{
-    right: 50%;
-    bottom: 20%;
+  .home .bg-video{
+    display: none;
+  }
 
-    text-align: center;
-    transform: translate(50%, 50%);
+  .home .bg-image{
+    display: block;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    visibility: visible;
+
+    filter: brightness(0.5);
+
+    z-index: 100;
+
+  }
+
+  .home .tap-icon{
+    display: none;
+  }
+
+  .home .scroll-down-arrow{
+    display: none;
   }
 }

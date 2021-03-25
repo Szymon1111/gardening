@@ -1,12 +1,17 @@
-const scrollToElement = (tag, elementPart = "CENTER") => {
+const scrollToElement = (tag, newElementPart = "CENTER") => {
   const element = document.querySelector(tag);
   let scrollPos = 0;
+  let elementPart = newElementPart;
 
-  if (elementPart = "CENTER") {
+  if(window.innerWidth < 1024){
+    elementPart = "TOP";
+  }
+
+  if (elementPart === "CENTER") {
     scrollPos =
       element.offsetTop - window.innerHeight / 2 + element.clientHeight / 2;
   } 
-  else if (elementPart = "TOP") {
+  else if (elementPart === "TOP") {
     scrollPos = element.offsetTop;
   }
 

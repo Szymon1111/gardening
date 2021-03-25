@@ -10,11 +10,8 @@
   box-sizing: border-box;
 }
 
-.offer h1 {
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 50px;
-
+.offer .section-title{
+  display: none;
 }
 
 .offer h3 {
@@ -27,12 +24,6 @@
 .offer h5 {
   margin: 0;
   color: #447604;
-}
-
-
-
-.category-title {
-  font-size: 24px;
 }
 
 .offer .christmas-trees {
@@ -55,11 +46,24 @@
 }
 
 .offer-option:hover {
-  width: 75%;
-
+  width: 65%;
 }
 
-.offer-option h1 {
+.offer-option:hover > .desktop-subtitle{
+  top: 10%;
+  text-shadow: none;
+  color: black;
+  font-size: 36px;
+}
+
+.offer-option:hover > .content{
+  height: 100%;
+}
+
+.offer .desktop-subtitle {
+  text-align: center;
+  font-size: 42px;
+
   color: #ececec;
 
   position: absolute;
@@ -70,7 +74,13 @@
 
   z-index: 101;
 
+  text-shadow: 4px 4px 4px black;
+
   transition: .4s;
+}
+
+.offer-option .mobile-subtitle{
+  display: none;
 }
 
 .offer-option .content {
@@ -93,20 +103,6 @@
 }
 
 
-@media (min-width: 1025px){
-  .offer-option:hover>.content {
-    height: 100%;
-  }
-  
-  .offer-option:hover>h1 {
-    top: 10%;
-  
-    color: black;
-    font-size: 30px;
-  }
-}
-
-
 .offer .bg-image {
   width: 100%;
   height: 100%;
@@ -126,7 +122,19 @@
 }
 
 
-@media (max-width: 1320px){
+@media (max-width: 1024px){
+
+  .offer-option:hover>.content {
+    height: 100%;
+  }
+  
+  .offer-option:hover>h1 {
+    top: 10%;
+  
+    color: black;
+    font-size: 30px;
+  }
+
   .offer{
     justify-content: center;
     align-items: center;
@@ -135,14 +143,27 @@
     height: auto;
   }
 
+  .offer .section-title{
+    display: block;
+
+    font-size: 46px;
+  }
+
   .offer-option{
     width: 100%;
 
-    margin-top: 100px;
+    margin-bottom: 100px;
   }
 
-  .offer h1{
-    font-size: 42px;
+  .offer .desktop-subtitle{
+    display: none;
+  }
+
+  .offer-option .mobile-subtitle{
+    display: block;
+
+    text-align: center;
+    font-size: 30px;
   }
 
   .offer .right-image,
