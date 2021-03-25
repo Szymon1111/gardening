@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bf2d4ced.chunk.css",
+    "main.js": "/static/js/main.c65ef129.chunk.js",
+    "main.js.map": "/static/js/main.c65ef129.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2b29d6cf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2b29d6cf.js.map",
+    "static/js/2.7b345e7e.chunk.js": "/static/js/2.7b345e7e.chunk.js",
+    "static/js/2.7b345e7e.chunk.js.map": "/static/js/2.7b345e7e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.bf2d4ced.chunk.css.map": "/static/css/main.bf2d4ced.chunk.css.map",
+    "static/js/2.7b345e7e.chunk.js.LICENSE.txt": "/static/js/2.7b345e7e.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Sora-VariableFont_wght.93840bb2.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b29d6cf.js",
+    "static/js/2.7b345e7e.chunk.js",
+    "static/css/main.bf2d4ced.chunk.css",
+    "static/js/main.c65ef129.chunk.js"
+  ]
+}
