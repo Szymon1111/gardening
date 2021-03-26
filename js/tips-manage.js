@@ -1,4 +1,4 @@
-const APIaddress = './API'
+const APIaddress = 'https://gardening.vercel.app/API'
 const tipsContent = document.querySelector(".tips-container");
 
 printTips = () => {
