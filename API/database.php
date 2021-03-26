@@ -3,15 +3,15 @@
   // header("Access-Control-Allow-Origin: http://topgames.webd.pro/SpaceJump/");
 
   class Database {
-    private $HOST = 'localhost';
-    private $USER = 'root';
-    private $PASSWORD = '';
-    private $NAME = 'gardening';
-
     // private $HOST = 'localhost';
     // private $USER = 'root';
     // private $PASSWORD = '';
-    // private $NAME = 'topgames_skijump';
+    // private $NAME = 'gardening';
+
+    private $HOST = 'sql103.epizy.com';
+    private $USER = 'epiz_28242939';
+    private $PASSWORD = 'Y71to3plmKT1oN';
+    private $NAME = 'epiz_28242939_gardeningDB';
 
     public $connection;
 
