@@ -11,9 +11,9 @@ navOpener.addEventListener("click", () => {
 
 window.addEventListener("load", () => {
   const loading = document.querySelector(".loading");
-  loading.style.opacity = "0";
   window.setTimeout(() => {
     loading.style.display = "none";
+    loading.style.opacity = "0";
     // document.querySelector("body").style.overflow = "auto";
   }, 2000);
 });
