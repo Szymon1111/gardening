@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SpaceJump/gardening/manage/static/css/main.a1dfdf33.chunk.css",
-    "main.js": "/SpaceJump/gardening/manage/static/js/main.696b368f.chunk.js",
-    "main.js.map": "/SpaceJump/gardening/manage/static/js/main.696b368f.chunk.js.map",
+    "main.js": "/SpaceJump/gardening/manage/static/js/main.e3f867a9.chunk.js",
+    "main.js.map": "/SpaceJump/gardening/manage/static/js/main.e3f867a9.chunk.js.map",
     "runtime-main.js": "/SpaceJump/gardening/manage/static/js/runtime-main.088a36ba.js",
     "runtime-main.js.map": "/SpaceJump/gardening/manage/static/js/runtime-main.088a36ba.js.map",
     "static/js/2.5bbbb155.chunk.js": "/SpaceJump/gardening/manage/static/js/2.5bbbb155.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.088a36ba.js",
     "static/js/2.5bbbb155.chunk.js",
     "static/css/main.a1dfdf33.chunk.css",
-    "static/js/main.696b368f.chunk.js"
+    "static/js/main.e3f867a9.chunk.js"
   ]
 }

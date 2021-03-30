@@ -10,7 +10,7 @@ body {
 
   scroll-behavior: smooth;
 
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .flex-column {
@@ -97,6 +97,10 @@ a {
   animation-delay: .5s;
 }
 
+.icons-author {
+  text-align: center;
+}
+
 @keyframes loading-animation {
   0% {
     transform: scale(1);
@@ -112,17 +116,18 @@ a {
   }
 }
 
-@media (max-width: 1024px){
-  .bg-image{
+@media (max-width: 1024px) {
+
+  .bg-image {
     display: none;
   }
 
-  .section{
+  .section {
     justify-content: center;
   }
 
-  .section-title{
-    font-size: 48px;
+  .section-title {
+    font-size: 32px;
 
     margin-bottom: 50px;
     margin-top: 50px;

@@ -1,5 +1,5 @@
-// const APIaddress = "http://localhost/gardening/API/";
-const APIaddress = "http://gardeningapi.epizy.com/API";
+const APIaddress = "http://localhost/gardening/API/";
+// const APIaddress = "http://gardeningapi.epizy.com/API";
 
 const navOpener = document.querySelector(".nav-opener");
 const pageNav = document.querySelector(".page-nav");
@@ -12,10 +12,10 @@ navOpener.addEventListener("click", () => {
 window.addEventListener("load", () => {
   const loading = document.querySelector(".loading");
   loading.style.opacity = "0";
-  window.setInterval(() => {
+  window.setTimeout(() => {
     loading.style.display = "none";
-    document.querySelector("body").style.overflow = "auto";
-  }, 1000);
+    // document.querySelector("body").style.overflow = "auto";
+  }, 2000);
 });
 
 const home = document.querySelector(".home");

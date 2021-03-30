@@ -139,7 +139,7 @@
   .offer .section-title {
     display: block;
 
-    font-size: 46px;
+    font-size: 32px;
   }
 
   .offer-option {
@@ -178,7 +178,7 @@
     position: static;
 
     color: black;
-    font-size: 36px;
+    font-size: 24px;
 
     transform: none;
   }
