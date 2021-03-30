@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-.offer .section-title{
+.offer .section-title {
   display: none;
 }
 
@@ -45,24 +45,28 @@
   transition: .5s;
 }
 
-.offer-option:hover {
-  width: 65%;
-}
+@media (min-width: 1024px) {
+  .offer-option:hover {
+    width: 65%;
+  }
 
-.offer-option:hover > .desktop-subtitle{
-  top: 10%;
-  text-shadow: none;
-  color: black;
-  font-size: 36px;
-}
+  .offer-option:hover>.desktop-subtitle {
+    top: 10%;
+    text-shadow: none;
+    color: black;
+    font-size: 36px;
+  }
 
-.offer-option:hover > .content{
-  height: 100%;
+  .offer-option:hover>.content {
+    height: 100%;
+  }
 }
 
 .offer .desktop-subtitle {
   text-align: center;
-  font-size: 42px;
+  font-size: 36px;
+
+  font-weight: 700;
 
   color: #ececec;
 
@@ -79,7 +83,7 @@
   transition: .4s;
 }
 
-.offer-option .mobile-subtitle{
+.offer-option .mobile-subtitle {
   display: none;
 }
 
@@ -122,20 +126,9 @@
 }
 
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
 
-  .offer-option:hover>.content {
-    height: 100%;
-  }
-  
-  .offer-option:hover>h1 {
-    top: 10%;
-  
-    color: black;
-    font-size: 30px;
-  }
-
-  .offer{
+  .offer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -143,23 +136,23 @@
     height: auto;
   }
 
-  .offer .section-title{
+  .offer .section-title {
     display: block;
 
     font-size: 46px;
   }
 
-  .offer-option{
+  .offer-option {
     width: 100%;
 
     margin-bottom: 100px;
   }
 
-  .offer .desktop-subtitle{
+  .offer .desktop-subtitle {
     display: none;
   }
 
-  .offer-option .mobile-subtitle{
+  .offer-option .mobile-subtitle {
     display: block;
 
     text-align: center;
@@ -168,11 +161,11 @@
 
   .offer .right-image,
   .offer .left-image,
-  .offer .bg-image{
+  .offer .bg-image {
     display: none;
   }
 
-  .offer-option .content{
+  .offer-option .content {
     position: static;
     height: auto;
 
@@ -181,7 +174,7 @@
     background-color: transparent;
   }
 
-  .offer-option h1{
+  .offer-option h1 {
     position: static;
 
     color: black;

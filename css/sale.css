@@ -1,6 +1,6 @@
 .sale {
   width: 100%;
-  padding: 10vh 10vw;
+  padding: 15vh 10vw;
 
   box-sizing: border-box;
 
@@ -17,6 +17,8 @@
 
 .sale .center-text{
   width: auto;
+
+  margin-bottom: 0;
 }
 
 .sale .bg-image {
@@ -28,27 +30,29 @@
 
 .options{
   transform: translateY(-15px);
+  /* margin-top: 50px; */
 }
 
 .arrow{
 
-  width: 100px;
+  width: 130px;
   height: 140px;
 
   border-top: 2px solid black;
 
+  /* display: none; */
 }
 
 .left-text .arrow{
   border-left: 2px solid black;
-  transform: translate(50%, -40px);
+  transform: translate(50%, -35px);
 
 }
 
 .right-text .arrow{
   border-right: 2px solid black;
-  height: 206px;
-  transform: translate(-50%, -40px);
+  height: 170px;
+  transform: translate(-50%, -49px);
 }
 
 .background-image{

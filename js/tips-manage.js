@@ -1,4 +1,4 @@
-const APIaddress = 'http://gardeningapi.epizy.com/API'
+// const APIaddress = "http://localhost/gardening/API/";
 const tipsContent = document.querySelector(".tips-container");
 
 printTips = () => {

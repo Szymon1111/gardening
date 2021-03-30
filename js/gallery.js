@@ -15,4 +15,20 @@
 //   galleryImage.src = `./images/img${curImageSrc}.jpg`;
 // });
 
-// const loadImages = () => {};
+const loadImages = () => {
+  const galleryImagesContainer = document.querySelector(".image-slider");
+
+  fetch(`${APIaddress}/gallery/getAll.php`)
+    .then((res) => {
+      return res.json();
+    })
+    .then((res) => {
+      galleryImagesContainer.innerHTML = "";
+      res.forEach((image) => {
+        if (parseInt(image.isVisible) === 1)
+          galleryImagesContainer.innerHTML += `<img src="images/gallery/${image.name}" alt="" >`;
+      });
+    });
+};
+
+loadImages();
