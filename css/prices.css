@@ -7,16 +7,24 @@
   padding: 5vh 10vw;
   box-sizing: border-box;
 
-  width: 50%;
+  width: 55%;
 
   align-items: flex-end;
 }
 
 .prices .bg-image {
-  background-image: url('../images/img4.jpg');
-
-  width: 50%;
+  width: 20%;
   height: 100%;
+}
+
+#image1{
+  background-image: url('../images/img8.jpg');
+}
+
+#image2{
+  background-image: url('../images/img7.jpg');
+  width: 25%;
+
 }
 
 .price {

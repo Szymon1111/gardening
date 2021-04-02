@@ -14,6 +14,7 @@
     // private $NAME = 'epiz_28242939_gardeningDB';
 
     public $connection;
+    public $password = "Ch0!nk!Tuje";
 
     public function __construct() {
       $this->connection = new PDO('mysql:host='.$this->HOST.';dbname='.$this->NAME, $this->USER, $this->PASSWORD);
@@ -73,7 +74,7 @@
     }
     public function post($req, $varArray, $incommingAuthKey='') {
       // $source = $_SERVER['HTTP_REFERER'];
-      // if(strpos($source, 'API') === false && $incommingAuthKey === $this->getKeyHash()){ 
+      // if(strpos($source, 'API') === false && $incommingAuthKey === $this->password){ 
         $res = $this->connection->prepare($req);
         $res->execute($varArray);
       // }else{
